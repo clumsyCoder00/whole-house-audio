@@ -1,8 +1,16 @@
 # multi-instance snapclient service file
 # copy to /etc/systemd/system
 # sudo systemctl daemon-reload
+
+# call service file with numeric suffix which matches config files located in /etc/default
+# multiple instances of snapclient will run as specified in config files
 # sudo systemctl enable snapclient@1.service
-# sudo systemctl start snapclient@1
+# sudo systemctl enable snapclient@...service
+# sudo systemctl enable snapclient@6.service
+
+# sudo systemctl start snapclient@1.service
+# sudo systemctl start snapclient@...service
+# sudo systemctl start snapclient@6.service
 
 [Unit]
 Description=Snapcast client
