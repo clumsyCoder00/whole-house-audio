@@ -21,8 +21,8 @@ After=network-online.target time-sync.target sound.target avahi-daemon.service
 [Service]
 EnvironmentFile=-/etc/default/snapclient-%i
 ExecStart=/usr/bin/snapclient --logsink=system -i %i $SNAPCLIENT_OPTS
-User=nuthanael
-Group=nuthanael
+User=your_user
+Group=your_group
 Restart=on-failure
 
 [Install]
