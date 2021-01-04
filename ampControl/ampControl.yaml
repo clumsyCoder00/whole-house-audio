@@ -1,9 +1,4 @@
-# B4:FB:E4:41:FE:1D
-# 10.0.1.56
-# curl -X POST "http://10.0.1.80/switch/amplifier_z/turn_on"
-# curl -X POST "http://10.0.1.80/switch/amplifier_y/turn_off"
-
-# 
+#esphome configuration file for ESP8266
 esphome:
   name: ampControl
   platform: ESP8266
