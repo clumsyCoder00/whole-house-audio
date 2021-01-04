@@ -1,11 +1,18 @@
+# udev rules for persistent usb soundcard device names
+# copy file to /lib/udev/rules.d
+# run "udevadm monitor --kernel --subsystem-match=sound"  then insert USB sound card to determine PCI device prefix
+# of that particular sound card to enter below. Fill in ATTR{id}="___" with ID to be used through ALSA system
+# PCI device prefix is by USB slot rather than a particular soundcard.
+# from https://www.alsa-project.org/wiki/Changing_card_IDs_with_udev
+
 SUBSYSTEM!="sound", GOTO="my_usb_audio_end"
 ACTION!="add", GOTO="my_usb_audio_end"
 
-DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.1/3-3.1.1:1.0/sound/card?", ATTR{id}="sound_1"
-DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.2/3-3.1.2:1.0/sound/card?", ATTR{id}="sound_2"
-DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.3/3-3.1.3:1.0/sound/card?", ATTR{id}="sound_3"
-DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.4/3-3.1.4:1.0/sound/card?", ATTR{id}="sound_4"
-DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.2/3-3.2:1.0/sound/card?", ATTR{id}="sound_5"
-DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.3/3-3.3:1.0/sound/card?", ATTR{id}="sound_6"
+# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.1/3-3.1.1:1.0/sound/card?", ATTR{id}="sound_1"
+# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.2/3-3.1.2:1.0/sound/card?", ATTR{id}="sound_2"
+# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.3/3-3.1.3:1.0/sound/card?", ATTR{id}="sound_3"
+# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.4/3-3.1.4:1.0/sound/card?", ATTR{id}="sound_4"
+# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.2/3-3.2:1.0/sound/card?", ATTR{id}="sound_5"
+# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.3/3-3.3:1.0/sound/card?", ATTR{id}="sound_6"
 
 LABEL="my_usb_audio_end"
