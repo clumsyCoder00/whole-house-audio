@@ -1,5 +1,9 @@
 # multi-instance snapclient service file
-# 
+# copy to /etc/systemd/system
+# sudo systemctl daemon-reload
+# sudo systemctl enable snapclient@1.service
+# sudo systemctl start snapclient@1
+
 [Unit]
 Description=Snapcast client
 Documentation=man:snapclient(1)
