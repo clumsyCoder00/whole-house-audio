@@ -1,0 +1,2 @@
+START_SNAPCLIENT=true
+SNAPCLIENT_OPTS="--host 10.0.1.2 --soundcard pcm.bedroom_loud"
