@@ -1,7 +1,7 @@
 # whole-house-audio
 FOSS linux based whole house audio system. 
 
-The goal of this system is to allow for Airplay devices to send audio to a central system (snapcast) which distributes the audio to both local soundcards, a DLNA receiver and (to a lesser extent) chromecast audio receivers. Configuration of local Spotify and Plex media players which allow for remote control of the local player through their mobile app is also included.
+The goal of this system is to allow for Airplay devices to send audio to a central system (snapcast) which distributes the audio to both local soundcards, a DLNA receiver and chromecast audio receivers. Configuration of local Spotify and Plex media players which allow for remote control of the local player through their mobile app is also included.
 This system is tested on Ubuntu 20.04 on AMD64 hardware. A cursory revew found all packages (with the exeception of pulseaudio-dlna) to also be available for ARM systems although this is not tested.
 The intent of this repository is to co-locate all configuration files needed to configure the various components of the system. These components include:
 - [Snapcast](https://github.com/badaix/snapcast) - a multiroom client-server audio player
