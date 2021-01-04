@@ -1,3 +1,7 @@
+# service file to continuously run ampControl.sh
+# sudo systemctl enable ampControl.service
+# sudo systemctl start ampControl
+
 [Unit]
 Description=ampControl service to monitor soundcards, send signal to amps
 
