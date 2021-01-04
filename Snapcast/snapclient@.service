@@ -2,8 +2,9 @@
 # copy to /etc/systemd/system
 # sudo systemctl daemon-reload
 
-# call service file with numeric suffix which matches config files located in /etc/default
-# multiple instances of snapclient will run as specified in config files
+# once config files have been generated and populated with correct soundcard information,
+# call this service file with numeric suffix which matches config files located in /etc/default
+# multiple instances of snapclient will run as specified in config files. e.g.
 # sudo systemctl enable snapclient@1.service
 # sudo systemctl enable snapclient@...service
 # sudo systemctl enable snapclient@6.service
