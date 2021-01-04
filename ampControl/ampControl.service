@@ -1,0 +1,10 @@
+[Unit]
+Description=ampControl service to monitor soundcards, send signal to amps
+
+[Service]
+ExecStart=/home/nuthanael/Documents/ampControl.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target
