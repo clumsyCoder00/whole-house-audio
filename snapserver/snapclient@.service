@@ -1,4 +1,5 @@
-#multi-instance snapclient service file
+# multi-instance snapclient service file
+# 
 [Unit]
 Description=Snapcast client
 Documentation=man:snapclient(1)
@@ -8,11 +9,8 @@ After=network-online.target time-sync.target sound.target avahi-daemon.service
 [Service]
 EnvironmentFile=-/etc/default/snapclient-%i
 ExecStart=/usr/bin/snapclient --logsink=system -i %i $SNAPCLIENT_OPTS
-#ExecStart=/usr/bin/snapclient ---logsink=system --user nuthanael:nuthanael $SNAPCLIENT_OPTS
 User=nuthanael
 Group=nuthanael
-#User=snapclient
-#Group=snapclient
 Restart=on-failure
 
 [Install]
