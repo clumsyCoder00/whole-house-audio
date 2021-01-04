@@ -1,3 +1,13 @@
+# multi-instance shairpot-sync service file
+# copy to /etc/systemd/system
+# sudo systemctl daemon-reload
+
+# once config files have been generated and populated with correct information,
+# call this service file with numeric suffix which matches config files located in /etc
+# multiple instances of shairport-sync will run as specified in config files. e.g.
+# sudo systemctl enable shairport-sync@bedroom.service
+# sudo systemctl start shairport-sync@bedroom.service
+
 [Unit]
 Description=Shairport Sync - AirPlay Audio Receiver - %I
 After=sound.target
