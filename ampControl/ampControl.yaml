@@ -1,0 +1,75 @@
+# B4:FB:E4:41:FE:1D
+# 10.0.1.56
+# curl -X POST "http://10.0.1.80/switch/amplifier_z/turn_on"
+# curl -X POST "http://10.0.1.80/switch/amplifier_y/turn_off"
+
+# 
+esphome:
+  name: ampControl
+  platform: ESP8266
+  board: d1_mini_lite
+  #board: d1_mini
+  on_loop:
+    then:
+        if:
+          condition:
+            or:
+              - switch.is_on: amp_x_switch
+              - switch.is_on: amp_y_switch
+              - switch.is_on: amp_z_switch
+
+          then:
+            - output.turn_on: amp_power_supply
+          else:
+            - output.turn_off: amp_power_supply
+
+wifi:
+  ssid: 'watkins'
+  password: 'abc123ab'
+
+api:
+
+logger:
+
+ota:
+
+web_server:
+  port: 80
+
+output:
+  - platform: gpio
+    id: 'amp_power_supply'
+    pin: D7
+
+switch:
+  - platform: gpio
+    name: "Amplifier X"
+    id: 'amp_x_switch'
+    pin:
+      number: D5
+
+  - platform: gpio
+    name: "Amplifier Y"
+    id: 'amp_y_switch'
+    pin:
+      number: D6
+
+  - platform: gpio
+    name: "Amplifier Z"
+    id: 'amp_z_switch'
+    pin:
+      number: D0
+
+sensor:
+    # https://esphome.io/components/sensor/adc.html
+  - platform: adc
+    pin: A0
+    name: "Amplifier Power Supply Voltage"
+    accuracy_decimals: 1
+    # update_interval: 60s
+    # https://esphome.io/components/sensor/index.html#throttle-heartbeat-debounce-delta
+    filters:
+      - multiply: 43.62
+      - or:
+        - heartbeat: 5s
+        - delta: 0.1
