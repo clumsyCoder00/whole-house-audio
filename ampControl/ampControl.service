@@ -1,14 +1,16 @@
 # service file to continuously run ampControl.sh
+
+# copy to /etc/systemd/system/ampControl.service
+# sudo systemctl daemon-reload
 # sudo systemctl enable ampControl.service
 # sudo systemctl start ampControl
 
 [Unit]
-Description=ampControl service to monitor soundcards, send signal to amps
+Description=ampControl service to monitor soundcards, send signal to esphome http API via ESP8266
 
 [Service]
-ExecStart=/directory/to/script/ampControl.sh
-Type=oneshot
-RemainAfterExit=yes
+ExecStart=/path/to/script/ampControl.sh
+Type=simple
 
 [Install]
 WantedBy=multi-user.target
