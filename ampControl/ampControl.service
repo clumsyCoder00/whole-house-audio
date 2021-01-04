@@ -2,7 +2,7 @@
 Description=ampControl service to monitor soundcards, send signal to amps
 
 [Service]
-ExecStart=/home/nuthanael/Documents/ampControl.sh
+ExecStart=/directory/to/script/ampControl.sh
 Type=oneshot
 RemainAfterExit=yes
 
