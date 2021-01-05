@@ -1,0 +1,10 @@
+Installation
+
+[https://github.com/bmc0/dsp](https://github.com/bmc0/dsp)
+
+[Instructions for multiple configurations](https://github.com/bmc0/dsp#configuration)
+
+
+/etc/ladspa_dsp/config - global config folder, make if doesn't exist
+
+~/.config/ladspa_dsp/config - user ladspa dsp config (cant use with snapcast client as it uses a different user)
