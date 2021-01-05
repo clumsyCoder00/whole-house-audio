@@ -1,3 +1,5 @@
+# An example LADSPA-DSP config file, points to effects chain file which contains parametric equalizer parameters
+# files should be located in /etc/ladspa_dsp (create if not existing)
 # Bedroom
 #
 input_channels=2
