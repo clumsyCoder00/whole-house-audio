@@ -1,21 +1,11 @@
 [Unit]
 Description=pulseaudio DLNA server to send audio to DLNA & cast devices
-# Enable: systemctl --user enable pulseaudio-dlna
+# Enable: sudo systemctl enable pulseaudio-dlna
+# Start: sudo systemctl start pulseaudio-dlna
 
 [Service]
-#User=nuthanael
-#Group=nuthanael
-#WorkingDirectory=/home/nuthanael/pulseaudio-dlna
-#        '/home/nuthanael/pulseaudio-dlna/bin/pulseaudio-dlna' 
 Type=simple
 ExecStart=/usr/local/bin/pulseaudio-dlna --port 9000
-
-#Type=exec
-#RemainAfterExit=yes
-#Restart=on-failure
-
-#StandardOutput=syslogConsola               # Output to syslog
-#StandardError=syslogConsola                # Output to syslog
 
 [Install]
 WantedBy=multi-user.target
