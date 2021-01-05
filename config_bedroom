@@ -1,0 +1,6 @@
+# Bedroom
+#
+input_channels=2
+output_channels=2
+LC_NUMERIC=C
+effects_chain=@bedroom.txt
