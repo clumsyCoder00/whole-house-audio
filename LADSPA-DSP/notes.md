@@ -1,9 +1,10 @@
-Installation
+# Installation
 
 [https://github.com/bmc0/dsp](https://github.com/bmc0/dsp)
 
 [Installation Guide](https://github.com/bmc0/dsp/wiki/System-Wide-DSP-Guide)
 
+# Configuration
 [Instructions for multiple configurations](https://github.com/bmc0/dsp#configuration)
 
 
