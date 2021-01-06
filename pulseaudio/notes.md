@@ -1,6 +1,9 @@
 /etc/pulse/default.pa - global preferences
+sudo pkill pulseaudio
+pulseaudio -D
 
-Cannot create pipe sinks when snapserver is running, polling for new content
+Cannot create pipe sinks when snapserver is running and polling for new content
+
 
 pacmd load-module module-pipe-sink file=/tmp/spotify_fifo sink_name=Spotify format=s16le rate=48000
 
