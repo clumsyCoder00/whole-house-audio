@@ -2,6 +2,8 @@
 Description=pulseaudio DLNA server to send audio to DLNA & cast devices
 # Enable: sudo systemctl enable pulseaudio-dlna
 # Start: sudo systemctl start pulseaudio-dlna
+# may need to run associated snapclient as user:
+# systemctl --user start snapclient@7
 
 [Service]
 Type=simple
