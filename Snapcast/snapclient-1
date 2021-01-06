@@ -1,7 +1,0 @@
-# copy this file to /etc/default
-# make copies of this file with numeric suffix as necessary to accomodate number of separate zones
-# e.g. snapclient-2, snapclient-3,..,snapclient-6
-# revise soundcard for each instance
-
-START_SNAPCLIENT=true
-SNAPCLIENT_OPTS="--host 10.0.1.2 --soundcard pcm.bedroom_loud"
