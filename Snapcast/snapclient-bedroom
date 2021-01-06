@@ -1,0 +1,2 @@
+START_SNAPCLIENT=true
+SNAPCLIENT_OPTS="-i 6 --soundcard pcm.bedroom_loud"
