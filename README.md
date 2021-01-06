@@ -14,3 +14,6 @@ The intent of this repository is to co-locate all configuration files needed to 
 - [esphome](https://esphome.io/) - for control of power amplifier power supplies. ampControl script polls for active sound cards, sends ON signal to ESP8266 relay of amplifier(s) associated with active soundcard(s).
 
 (https://community.roonlabs.com/t/a-guide-how-to-do-room-correction-and-use-it-in-roon/23800)
+
+
+sudo systemctl reset-failed - clear out failed services, useful for testing/verifying services
