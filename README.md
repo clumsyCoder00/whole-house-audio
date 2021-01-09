@@ -12,7 +12,7 @@ The intent of this repository is to co-locate all configuration files needed to 
 - [LSP (Linux Studio Plugins)](https://github.com/sadko4u/lsp-plugins) - used to implement [equal loudness curves](https://lsp-plug.in/?page=manuals&section=loud_comp_stereo) via the LADSPA API
 - [pulseaudio-dlna](https://github.com/masmu/pulseaudio-dlna) - for sending audio to DLNA clients. I appear to be using the [noarhch package](https://opensuse.pkgs.org/tumbleweed/packman-x86_64/pulseaudio-dlna-0.6.0+git20190209.b0db813-1.4.noarch.rpm.html) because there is no build canidate of the main 
 package for Ubuntu 18.04. [This guide](https://www.linuxuprising.com/2020/10/how-to-use-pulseaudio-dlna-to-stream.html) may be of some assistance as well.
-- [forked-daapd](https://github.com/ejurgensen/forked-daapd) - music server, syncs with iTunes XML file, plays internest streams
+- [forked-daapd](https://github.com/ejurgensen/forked-daapd) - music server, syncs with iTunes XML file, plays internet streams.
 - [esphome](https://esphome.io/) - for control of power amplifier power supplies. ampControl script polls for active sound cards, sends ON signal to ESP8266 relay of amplifier(s) associated with active soundcard(s).
 
 (https://community.roonlabs.com/t/a-guide-how-to-do-room-correction-and-use-it-in-roon/23800)
