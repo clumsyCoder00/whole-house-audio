@@ -28,3 +28,5 @@ sudo ./configure
   --with-dbus-interface # for dbus control
   
   --with-dbus-test-client # for dbus testing
+
+[Simple Installation Instructions](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md)
