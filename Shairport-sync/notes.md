@@ -48,7 +48,7 @@ sudo apt-get install libglib2.0-dev
 
 sudo apt-get install libmosquitto-dev
 
-./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl
+./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl --with-avahi
 
 make
 
