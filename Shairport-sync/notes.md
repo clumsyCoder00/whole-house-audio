@@ -10,6 +10,8 @@ sudo ./configure
 
   --with-soxr # resampling library
 
+  --with-avahi # aparrently need this even though already on the system?
+
   --with-alsa # need for ALSA endpoints
 
   --with-apple-alac # need this for losslessly passing ALAC files
@@ -25,8 +27,6 @@ sudo ./configure
   --with-mpris-interface (libglib2.0-dev dependent)
 
   --with-mqtt-client (libmosquitto-dev dependent)
-
-  --with-avahi # don't need this, already on the system
 
   --with-systemd # don't need this, using custom systemd service
 
