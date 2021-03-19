@@ -57,4 +57,4 @@ sudo make install
 which shairport-sync
 
 shairport-sync --version
-# 3.3.8rc3-alac-OpenSSL-ALSA-pipe-metadata-mqtt-dbus-mpris-sysconfdir:/etc
+3.3.8rc3-alac-OpenSSL-ALSA-pipe-metadata-mqtt-dbus-mpris-sysconfdir:/etc
