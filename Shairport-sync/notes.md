@@ -26,9 +26,9 @@ sudo ./configure
 
   --with-mqtt-client (libmosquitto-dev dependent)
 
-  --with-avahi # shouldn't need this, already on the system
+  --with-avahi # don't need this, already on the system
 
-  --with-systemd # use this as a template to start off with, use multi-instance systemd instead
+  --with-systemd # don't need this, using custom systemd service
 
   --with-convolution # don't need this, using LADSPA
 
@@ -37,3 +37,24 @@ sudo ./configure
 
   
 [Simple Installation Instructions](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md)
+
+git clone https://github.com/mikebrady/shairport-sync.git
+
+cd shairport-sync
+
+autoreconf -i -f
+
+sudo apt-get install libglib2.0-dev
+
+sudo apt-get install libmosquitto-dev
+
+./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl
+
+make
+
+sudo make install
+
+which shairport-sync
+
+shairport-sync --version
+# 3.3.8rc3-alac-OpenSSL-ALSA-pipe-metadata-mqtt-dbus-mpris-sysconfdir:/etc
