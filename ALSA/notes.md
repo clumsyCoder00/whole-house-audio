@@ -2,6 +2,6 @@
 
 non-user asound.conf file is found at /etc/asound.conf
 
-# restart sound server
+restart sound server
 
 sudo /etc/init.d/alsa-utils restart
