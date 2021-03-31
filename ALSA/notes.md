@@ -1,4 +1,4 @@
-[asoundrc](https://alsa.opensrc.org/Asoundrc)
+[asoundrc file configuration parameters](https://alsa.opensrc.org/Asoundrc)
 
 non-user asound.conf file is found at /etc/asound.conf
 
