@@ -7,6 +7,10 @@
 # Configuration
 [Instructions for multiple configurations](https://github.com/bmc0/dsp#configuration)
 
+run: sudo /etc/init.d/alsa-utils restart
+
+to apply changes made to config files
+
 
 /etc/ladspa_dsp/config - global config folder, make if doesn't exist
 
