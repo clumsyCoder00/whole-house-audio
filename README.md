@@ -21,3 +21,5 @@ package for Ubuntu 18.04. [This guide](https://www.linuxuprising.com/2020/10/how
 sudo systemctl reset-failed - clear out failed services, useful for testing/verifying services
 
 tail -f /var/log/syslog - useful for watching for errors in configuration files use with | grep to narrow down results to particular process
+
+journalctl -f
