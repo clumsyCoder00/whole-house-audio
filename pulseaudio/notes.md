@@ -19,7 +19,9 @@ pacmd update-sink-proplist Plex device.description=Plex
 
 pacmd load-module module-pipe-sink file=/tmp/bluetooth_fifo sink_name=Bluetooth format=s16le rate=48000
 
-pacmd unload-module
+pactl list modules
+
+pacmd unload-module (module number)
 
 pacmd list-sinks - list output devices
 
