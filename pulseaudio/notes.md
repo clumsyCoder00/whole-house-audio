@@ -1,5 +1,7 @@
 /etc/pulse/default.pa - global preferences
+
 sudo pkill pulseaudio
+
 pulseaudio -D
 
 Cannot create pipe sinks when snapserver is running and polling for new content
