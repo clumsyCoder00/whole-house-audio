@@ -1,4 +1,4 @@
-[module-null-sink sink & load-module module-loopback](https://endless.ersoft.org/pulseaudio-loopback/)
+[module-null-sink sink & module-loopback](https://endless.ersoft.org/pulseaudio-loopback/)
 
 /etc/pulse/default.pa - global preferences
 
