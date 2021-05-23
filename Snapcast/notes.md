@@ -8,11 +8,11 @@ sudo systemctl restart snapserver
 
 stream = airplay:///shairport-sync?name=Airplay[&devicename=Snapcast][&port=5000]
 
-# alsa: alsa://?name=<name>&device=<alsa device>
+alsa: alsa://?name=<name>&device=<alsa device>
   
-# get alsa hardware info with arecord -l
+get alsa hardware info with arecord -l
 
-# hw:X,Y comes from this mapping of your hardware
+hw:X,Y comes from this mapping of your hardware
 
-# X is the card number, while Y is the device number
+X is the card number, while Y is the device number
 
