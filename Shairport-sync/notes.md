@@ -38,17 +38,17 @@ sudo ./configure
   
 [Simple Installation Instructions](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md)
 
+sudo apt-get install libglib2.0-dev
+
+sudo apt-get install libmosquitto-dev
+
 git clone https://github.com/mikebrady/shairport-sync.git
 
 cd shairport-sync
 
 autoreconf -i -f
 
-sudo apt-get install libglib2.0-dev
-
-sudo apt-get install libmosquitto-dev
-
-./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl --with-avahi
+./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl --with-stdout --with-avahi
 
 make
 
@@ -57,4 +57,4 @@ sudo make install
 which shairport-sync
 
 shairport-sync --version
-3.3.8rc3-alac-OpenSSL-ALSA-pipe-metadata-mqtt-dbus-mpris-sysconfdir:/etc
+3.3.7rc3-alac-OpenSSL-Avahi-ALSA-stdout-pipe-metadata-mqtt-dbus-mpris-sysconfdir:/etc
