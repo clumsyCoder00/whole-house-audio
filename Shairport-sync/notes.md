@@ -32,7 +32,7 @@ sudo ./configure
 
   --with-convolution # don't need this, using LADSPA
 
-  --with -stdout # not using this
+  --with -stdout # need this
 
 
   
