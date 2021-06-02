@@ -2,8 +2,10 @@
 
 [Server Config Paramaters](https://github.com/badaix/snapcast/blob/master/doc/configuration.md)  
 `sudo systemctl restart snapserver`  
-
-`/etc/snapserver.conf` - snapserver config file location  
+snapserver service file path:
+`/lib/systemd/system/snapserver.service`  
+snapserver config file location  
+`/etc/snapserver.conf`  
 
 /etc/default/snapclient-bedroom
 
