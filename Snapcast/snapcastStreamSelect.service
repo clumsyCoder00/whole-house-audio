@@ -8,8 +8,8 @@ After=network.target time-sync.target avahi-daemon.service snapserver.service
 
 [Service]
 # EnvironmentFile=-/etc/default/snapserver
-WorkingDirectory=/home/nuthanael/
-User=nuthanael
+WorkingDirectory=/home/user/
+User=user
 ExecStart=/usr/bin/python3 '/home/nuthanael/Documents/snapcastStreamSelect.py'
 #User=snapserver
 #Group=snapserver
