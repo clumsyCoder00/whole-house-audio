@@ -1,9 +1,9 @@
 import asyncio
+# pip install snapcast
 import snapcast.control
 import time
 
 # https://github.com/happyleavesaoc/python-snapcast
-
 loop = asyncio.get_event_loop()
 
 #activeStreamCount = 0
