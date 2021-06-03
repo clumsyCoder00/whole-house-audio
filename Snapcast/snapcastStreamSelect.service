@@ -1,20 +1,17 @@
+# sudo systemctl daemon-reload
 # Enable: sudo systemctl enable snapcastStreamSelect
 # Start: sudo systemctl start snapcastStreamSelect
 [Unit]
 Description=Snapcast auto source select
-#Documentation=man:snapserver(1)
 Wants=avahi-daemon.service
 After=network.target time-sync.target avahi-daemon.service snapserver.service
 
 [Service]
-# EnvironmentFile=-/etc/default/snapserver
 WorkingDirectory=/home/user/
 User=user
 ExecStart=/usr/bin/python3 '/home/nuthanael/Documents/snapcastStreamSelect.py'
-#User=snapserver
-#Group=snapserver
 Type=simple
-#Restart=on-failure
+Restart=on-failure
 
 [Install]
 WantedBy=multi-user.target
