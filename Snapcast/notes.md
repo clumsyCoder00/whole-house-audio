@@ -5,7 +5,7 @@ snapserver service file path:
 snapserver config file path:  
 `/etc/snapserver.conf`  
 
-[Snapclient Config Paramaters](http://manpages.ubuntu.com/manpages/cosmic/man1/snapclient.1.html)
+[Snapclient Config Paramaters](http://manpages.ubuntu.com/manpages/cosmic/man1/snapclient.1.html)  
 snapclient service file path:  
 `/lib/systemd/system/snapclient@.service`  
 snapserver config file path:  
