@@ -1,10 +1,10 @@
-[Snapclient commandline options](http://manpages.ubuntu.com/manpages/cosmic/man1/snapclient.1.html)
+[Snapclient Config Paramaters](http://manpages.ubuntu.com/manpages/cosmic/man1/snapclient.1.html)
 
-[Server Config Paramaters](https://github.com/badaix/snapcast/blob/master/doc/configuration.md)  
+[Snap server Config Paramaters](https://github.com/badaix/snapcast/blob/master/doc/configuration.md)  
 `sudo systemctl restart snapserver`  
-snapserver service file path:
+snapserver service file path:  
 `/lib/systemd/system/snapserver.service`  
-snapserver config file location  
+snapserver config file path:  
 `/etc/snapserver.conf`  
 
 /etc/default/snapclient-bedroom
