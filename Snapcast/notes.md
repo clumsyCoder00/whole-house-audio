@@ -9,6 +9,8 @@ stream = airplay:///shairport-sync?name=Airplay[&devicename=Snapcast][&port=5000
 
 alsa: alsa://?name=<name>&device=<alsa device>
   
+get alsa pulseaudio-dlna device with 'pacmd list-sinks | grep name:'
+  
 get alsa hardware info with arecord -l
 
 hw:X,Y comes from this mapping of your hardware
