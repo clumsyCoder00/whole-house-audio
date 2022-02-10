@@ -8,4 +8,7 @@ aplay -L - list sink/output ports
 
 arecord -L - list source/input ports
 
+sound level meter  
+arecord -vv -D plughw:7,0 /dev/null  
+
 sudo /etc/init.d/alsa-utils restart
