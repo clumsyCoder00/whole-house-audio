@@ -1,3 +1,8 @@
+Installation  
+`sudo apt-get install 'snapserver_0.25.0-1_amd64.deb'`  
+
+
+
 [Snap server Config Paramaters](https://github.com/badaix/snapcast/blob/master/doc/configuration.md)  
 `sudo systemctl restart snapserver`  
 snapserver service file path:  
