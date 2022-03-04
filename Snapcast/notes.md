@@ -1,5 +1,7 @@
 Installation  
 `sudo apt-get install 'snapserver_0.25.0-1_amd64.deb'`  
+Restart Service  
+`sudo systemctl restart snapserver`  
 
 
 
