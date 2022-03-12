@@ -4,7 +4,7 @@ https://github.com/Cygn/pulseaudio-dlna
 
 cd to new directory to make venv environment  
 `$ python -m venv pulseaudio-dlna`  
-`$ source pulseaudio-dlna`  
+`$ source pulseaudio-dlna/bin/activate`  
 cd to files containing project  
 `$ make`  
 
