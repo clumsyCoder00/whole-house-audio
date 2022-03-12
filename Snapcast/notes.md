@@ -29,3 +29,7 @@ snapclient service file path:
 `/lib/systemd/system/snapclient@.service`  
 snapserver config file path:  
 `/etc/default/snapclient-bedroom`
+  
+Tail logs with this command:  
+  `tail -f /var/log/syslog | grep snap*'  
+   
