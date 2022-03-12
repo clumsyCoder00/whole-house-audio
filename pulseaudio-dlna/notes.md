@@ -10,6 +10,6 @@ cd to files containing project
 
 I needed to install newer version of protobuf  
 
-`$ pip install protobuf==3.19.1'  
+`$ pip install protobuf==3.19.1`  
 `$ pip install ifaddr>=0.1.7`  
-`$ /bin/pulseaudio-dlna --version'  
+`$ /bin/pulseaudio-dlna --version`   
