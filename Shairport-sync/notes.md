@@ -21,7 +21,7 @@ sudo ./configure
   
 [Simple Installation Instructions](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md)  
 
-`sudo apt-get install build-essential libtool libglib2.0-dev libmosquitto-dev`  
+`sudo apt-get install build-essential libtool libglib2.0-dev libmosquitto-dev libssl-dev`  
 `sudo apt-get install libpopt-dev libconfig++-dev`  
 `git clone https://github.com/mikebrady/shairport-sync.git`  
 `cd shairport-sync`  
