@@ -21,7 +21,8 @@ sudo ./configure
   
 [Simple Installation Instructions](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md)  
 
-`sudo apt-get install libglib2.0-dev libmosquitto-dev libpopt-dev`  
+`sudo apt-get install libglib2.0-dev libmosquitto-dev`  
+`sudo apt-get install libpopt-dev libconfig++-dev`  
 `git clone https://github.com/mikebrady/shairport-sync.git`  
 `cd shairport-sync`  
 `autoreconf -i -f`  
