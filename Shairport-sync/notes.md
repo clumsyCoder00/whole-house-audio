@@ -21,12 +21,11 @@ sudo ./configure
   
 [Simple Installation Instructions](https://github.com/mikebrady/shairport-sync/blob/master/INSTALL.md)  
 
-`sudo apt-get install libglib2.0-dev libmosquitto-dev`  
+`sudo apt-get install build-essential libglib2.0-dev libmosquitto-dev`  
 `sudo apt-get install libpopt-dev libconfig++-dev`  
 `git clone https://github.com/mikebrady/shairport-sync.git`  
 `cd shairport-sync`  
 `autoreconf -i -f`  
-`sudo  apt-get install build-essential`  
 `./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl --with-stdout --with-avahi`  
 `make`  
 `sudo make install`  
