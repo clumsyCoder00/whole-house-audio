@@ -7,7 +7,12 @@
 # Configuration
 [Instructions for multiple configurations](https://github.com/bmc0/dsp#configuration)
 
-run: `sudo /etc/init.d/alsa-utils restart`
+To list installed LADSPA plugins, install ladspa-sdk  
+`sudo apt-get install ladspa-sdk`  
+Then list plugins with  
+`listplugins`  
+
+run: `sudo /etc/init.d/alsa-utils restart`  
 `sudo alsa force-reload`  
 to apply changes made to config files
 
