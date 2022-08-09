@@ -7,6 +7,7 @@ After=network.target time-sync.target avahi-daemon.service
 [Service]
 EnvironmentFile=-/etc/default/snapserver
 ExecStart=/usr/bin/snapserver --logging.sink=system --server.datadir=${HOME} $SNAPSERVER_OPTS
+# may not have access to fifo in group separate from user
 User=snapserver
 Group=snapserver
 Restart=on-failure
