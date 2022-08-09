@@ -33,7 +33,7 @@ snapserver config file path:
 Tail logs with this command:  
   `tail -f /var/log/syslog | grep snap*'  
    
-For snapcast client connecting to dlna sink, need to use a user systemd process
+For snapcast client connecting to dlna sink, need to use a [user systemd process](https://nts.strzibny.name/systemd-user-services/)
 locate snapclient service in `/etc/systemd/user`  
 `systemctl --user daemon-reload`  
 `systemctl --user enable snapclient@family_room`  
