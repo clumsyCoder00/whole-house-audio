@@ -1,4 +1,8 @@
 # Installation
+Install ladspa-sdk  
+`sudo apt-get install ladspa-sdk`  
+Then list plugins with  
+`listplugins`  
 
 [https://github.com/bmc0/dsp](https://github.com/bmc0/dsp)
 
@@ -6,11 +10,6 @@
 
 # Configuration
 [Instructions for multiple configurations](https://github.com/bmc0/dsp#configuration)
-
-To list installed LADSPA plugins, install ladspa-sdk  
-`sudo apt-get install ladspa-sdk`  
-Then list plugins with  
-`listplugins`  
 
 run: `sudo /etc/init.d/alsa-utils restart`  
 `sudo alsa force-reload`  
