@@ -26,7 +26,7 @@ sudo ./configure
 `git clone https://github.com/mikebrady/shairport-sync.git`  
 `cd shairport-sync`  
 `autoreconf -i -f`  
-`./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl --with-stdout --with-avahi`  
+`./configure --sysconfdir=/etc --with-alsa --with-apple-alac --with-pipe --with-metadata --with-dbus-interface --with-dbus-test-client --with-mpris-interface --with-mqtt-client --with-ssl=openssl --with-stdout --with-avahi  --sysconfdir=/etc --with-alsa --with-soxr --with-systemd --with-airplay-2`  
 `make`  
 `sudo make install`  
 
