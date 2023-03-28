@@ -1,0 +1,64 @@
+version: '2'
+services:
+  bathroom:
+    image: mikebrady/shairport-sync:latest
+    restart: unless-stopped
+    devices:
+      - "/dev/snd"
+    volumes:
+      - ./config/bathroom.conf:/etc/shairport-sync.conf
+      - ./config/bathroom.wav:/etc/convolution.wav
+    networks:
+      spsnet:
+        ipv4_address: 10.0.1.101
+        
+  bedroom:
+    image: mikebrady/shairport-sync:latest
+    restart: unless-stopped
+    devices:
+      - "/dev/snd"
+    volumes:
+      - ./config/bedroom.conf:/etc/shairport-sync.conf
+      - ./config/bedroom.wav:/etc/convolution.wav
+    networks:
+      spsnet:
+        ipv4_address: 10.0.1.102
+
+  dining_room:
+    image: mikebrady/shairport-sync:latest
+    restart: unless-stopped
+    devices:
+      - "/dev/snd"
+    volumes:
+      - ./config/dining_room.conf:/etc/shairport-sync.conf
+      - ./config/dining_room.wav:/etc/convolution.wav
+    networks:
+      spsnet:
+        ipv4_address: 10.0.1.103
+
+  living_room:
+    image: mikebrady/shairport-sync:latest
+    restart: unless-stopped
+    devices:
+      - "/dev/snd"
+    volumes:
+      - ./config/living_room.conf:/etc/shairport-sync.conf
+      - ./config/living_room.wav:/etc/convolution.wav
+    networks:
+      spsnet:
+        ipv4_address: 10.0.1.10
+     
+networks:
+  spsnet:
+    name: spsnet
+    driver: macvlan
+    driver_opts:
+      # this is the hardware network interface of the docker host (ifconfig)
+      parent: eno1
+    ipam:
+      config:
+          # this is the subnet on which the docker host resides
+          # set in a range outside of the primary DHCP server
+        - subnet: 10.0.1.0/24
+          # this is the IP address of the docker host
+          gateway: 10.0.1.2
