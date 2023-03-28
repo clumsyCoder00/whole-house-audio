@@ -45,7 +45,7 @@ services:
       - ./config/living_room.wav:/etc/convolution.wav
     networks:
       spsnet:
-        ipv4_address: 10.0.1.10
+        ipv4_address: 10.0.1.104
      
 networks:
   spsnet:
