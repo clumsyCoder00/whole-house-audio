@@ -8,11 +8,10 @@
 SUBSYSTEM!="sound", GOTO="my_usb_audio_end"
 ACTION!="add", GOTO="my_usb_audio_end"
 
-# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.1/3-3.1.1:1.0/sound/card?", ATTR{id}="sound_1"
-# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.2/3-3.1.2:1.0/sound/card?", ATTR{id}="sound_2"
-# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.3/3-3.1.3:1.0/sound/card?", ATTR{id}="sound_3"
-# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.1/3-3.1.4/3-3.1.4:1.0/sound/card?", ATTR{id}="sound_4"
-# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.2/3-3.2:1.0/sound/card?", ATTR{id}="sound_5"
-# DEVPATH=="/devices/pci0000:00/0000:00:14.0/usb3/3-3/3-3.3/3-3.3:1.0/sound/card?", ATTR{id}="sound_6"
-
+DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card3", ATTR{id}="dev_1_bed"
+DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card4", ATTR{id}="dev_2_bat"
+DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card5", ATTR{id}="dev_3_liv"
+DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card6", ATTR{id}="dev_4_din"
+DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card0", ATTR{id}="dev_5_pat"
+DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card2", ATTR{id}="dev_6_ts1"
 LABEL="my_usb_audio_end"
