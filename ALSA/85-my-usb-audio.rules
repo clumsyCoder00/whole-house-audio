@@ -14,4 +14,5 @@ DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card5", ATTR{id}="dev_3_liv"
 DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card6", ATTR{id}="dev_4_din"
 DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card0", ATTR{id}="dev_5_pat"
 DEVPATH=="/devices/pci0000:00/0000:00:*/sound/card2", ATTR{id}="dev_6_ts1"
+
 LABEL="my_usb_audio_end"
