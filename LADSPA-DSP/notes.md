@@ -1,6 +1,12 @@
 # Installation
 Install ladspa-sdk  
 `sudo apt-get install ladspa-sdk`  
+Install ladspa-dsp  
+
+set environment variables in `/etc/environment`  
+`LADSPA_DSP_CONFIG_PATH=/etc/ladspa_dsp/config`  
+`LADSPA_PATH=/usr/lib/ladspa`  
+
 Then list plugins with  
 `listplugins`  
 
