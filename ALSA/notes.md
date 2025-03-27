@@ -1,6 +1,6 @@
 [asoundrc file configuration parameters](https://alsa.opensrc.org/Asoundrc)
 
-non-user asound.conf file is found at /etc/asound.conf
+non-user asound.conf file is found at `/etc/asound.conf`
 confirm that profiles created in asound.conf were entered correctly using  
 `sudo /etc/init.d/alsa-utils restart` then  
 `aplay -L`  
